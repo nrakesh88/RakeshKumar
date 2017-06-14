@@ -1,7 +1,9 @@
 package week2Day1;
 
 import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class LearnAlert {
 	
@@ -10,10 +12,13 @@ public class LearnAlert {
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		
 		ChromeDriver driver = new ChromeDriver();
+	//	FirefoxDriver driver = new FirefoxDriver();
 		
 		driver.manage().window().maximize();
 		
-		driver.navigate().to("https://www.irctc.co.in/eticketing/loginHome.jsf");
+		driver.get("https://www.irctc.co.in/eticketing/loginHome.jsf");
+	
+		driver.findElement(By.id("loginbutton")).click();
 		
 		driver.findElementById("loginbutton").click();
 		

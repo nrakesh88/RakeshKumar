@@ -3,18 +3,19 @@ package week1Day1;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class HelloWorld {
-	
-	HelloWorld(){
-		
+
+	public HelloWorld(){
+
 	}
+	
+	static HelloWorld  tx = new HelloWorld();
 
 	public static void main(String[] args) {
-
 		HelloWorld txt = new HelloWorld();
 		txt.b();
 		ChromeDriver driver = new ChromeDriver();
 		System.out.println("Karim is owner of TestLeaf");
-//		b();
+		//		b();
 	}
 
 	public void a(){
@@ -24,8 +25,10 @@ public class HelloWorld {
 		main(null);
 	}
 
-	public void b(){
-
+	public static void b(){
+		
+	//	HelloWorld  tx = new HelloWorld();
+		tx.a();
 	}
 
 

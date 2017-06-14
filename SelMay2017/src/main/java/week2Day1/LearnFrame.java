@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LearnFrame {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 
@@ -16,6 +16,8 @@ public class LearnFrame {
 		driver.navigate().to("http://jqueryui.com/selectable/");
 		
 		WebElement demo = driver.findElementByClassName("demo-frame");
+		
+		Thread.sleep(5000);
 			
 		driver.switchTo().frame(demo);
 			

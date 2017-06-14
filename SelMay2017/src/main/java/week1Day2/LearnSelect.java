@@ -3,11 +3,9 @@ package week1Day2;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -26,12 +24,13 @@ public class LearnSelect {
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);		
 		//Enter the userName
 		driver.findElementById("username").sendKeys("DemoSalesManager");		
-		//Enter the password
+		//Enter the passwordv
 		driver.findElementById("password").sendKeys("crmsfa");		
 		//Click Login
 		driver.findElementByClassName("decorativeSubmit").click();		
 		driver.findElementByLinkText("CRM/SFA").click();		
-		driver.findElementByLinkText("Create Lead").click();		
+		driver.findElementByLinkText("Create Lead").click();
+		
 		WebElement source = driver.findElementById("createLeadForm_industryEnumId");
 
 		Select dropdown = new Select(source);		
@@ -43,8 +42,15 @@ public class LearnSelect {
 
 		/*int count = allOptions.size();		
 		System.out.println(count);		
-		dropdown.selectByIndex(count-1);
+		dropdown.selectByIndex(count-1);		
 		 */
+		
+		
+		
+		
+		for (int i = 0; i < args.length; i++) {
+			
+		}
 
 		for (WebElement eachOption : allOptions) {
 			System.out.println(eachOption.getText());			

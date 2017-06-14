@@ -5,22 +5,24 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Login {
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	
 		//Launch the Browser
 		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		
 		//sys
 		//ClassName obj = new ClassName();	
-		FirefoxDriver driver = new FirefoxDriver();
-//		ChromeDriver driver = new ChromeDriver();		
+	//	FirefoxDriver driver = new FirefoxDriver();
+		ChromeDriver driver = new ChromeDriver();		
 		//Maximize
 		driver.manage().window().maximize();
 		//Load d URL
 		driver.get("http://leaftaps.com");
 		
 		//Enter the userName
-		driver.findElementById("username").sendKeys("DemoSalesManager");
+		driver.findElementById("username1").sendKeys("DemoSalesManager");
+		
+		Thread.sleep(3000);
 		
 		//Enter the password
 		driver.findElementById("password").sendKeys("crmsfa");
