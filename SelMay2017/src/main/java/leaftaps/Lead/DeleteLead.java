@@ -6,9 +6,9 @@ import wrappers.LeafTapsWrapper;
 
 public class DeleteLead extends LeafTapsWrapper{
 
-	@Test
+	@Test(groups={"regression"},dependsOnGroups={"sanity"})
 	public void deleteLead() throws Exception {
-		login();
+		
 		clickByLink("Leads");
 		clickByLink("Find Leads");
 		clickByXpath("//span[contains(text(),'Phone')]");
@@ -23,7 +23,7 @@ public class DeleteLead extends LeafTapsWrapper{
 		clickByXpath("//button[contains(text(),'Find Leads')]");
 		Thread.sleep(3000);
 		verifyTextContainsByXpath("//div[@class='x-paging-info']", "No records to display");
-		quitBrowser();
+		
 	}
 
 }

@@ -7,7 +7,7 @@ import wrappers.LeafTapsWrapper;
 
 public class MergeLead extends LeafTapsWrapper {
 	
-	@Test
+	@Test(groups={"sanity"},dependsOnGroups={"smoke"})
 	public void mergeLead() throws Exception{
 		clickByLink("Leads");
 		clickByLink("Merge Leads");

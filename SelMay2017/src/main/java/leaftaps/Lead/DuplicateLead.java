@@ -6,7 +6,7 @@ import wrappers.LeafTapsWrapper;
 
 public class DuplicateLead extends LeafTapsWrapper{
 	
-	@Test
+	@Test(groups={"regression"},dependsOnGroups={"sanity"})
 	public void duplicateLead() throws Exception{
 		
 		clickByLink("Leads");

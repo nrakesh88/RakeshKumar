@@ -2,7 +2,7 @@ package learnAnnotations;
 
 import org.testng.annotations.Test;
 
-public class LearnClass {
+public class LearnMethodsName {
 	
 	@Test
 	public void createLead(){
