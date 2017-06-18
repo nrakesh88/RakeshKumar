@@ -7,7 +7,7 @@ import wrappers.GenericWrappers;
 public class LoginSalesForce extends GenericWrappers{
 
 	@Test
-	public void login(){
+	public void login() throws Exception{
 		invokeApp("chrome", "https://developer.salesforce.com/signup?d=70130000000td6N");
 		enterById("first_name", "Gopi");
 		enterById("last_name", "J");

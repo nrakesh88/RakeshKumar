@@ -7,7 +7,7 @@ import wrappers.GenericWrappers;
 public class CreateLead extends GenericWrappers{
 
 	@Test
-	public void login() throws InterruptedException{
+	public void login() throws Exception{
 		//Launch the Browser
 		invokeApp("chrome", "http://leaftaps.com");
 		//Enter the userName

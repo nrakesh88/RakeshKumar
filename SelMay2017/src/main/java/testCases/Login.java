@@ -1,16 +1,13 @@
 package testCases;
 
-import java.util.concurrent.TimeUnit;
-
 import org.junit.Test;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 import wrappers.GenericWrappers;
 
 public class Login extends GenericWrappers{
 
 	@Test
-	public void login() throws InterruptedException {
+	public void login() throws Exception {
 		//Launch the Browser
 		invokeApp("chrome", "http://leaftaps.com");
 		//Enter the userName
@@ -30,7 +27,7 @@ public class Login extends GenericWrappers{
 	
 		clickById("name");
 		
-		closeBrowser();
+		quitBrowser();
 	}
 }
 
