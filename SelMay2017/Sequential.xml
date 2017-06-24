@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-	<test name="Leads">
+	<test name="Leads" parallel="classes" thread-count="2">
 		<classes>
 			<class name="leaftaps.Contact.CreateContact" />
 			<class name="leaftaps.Lead.CreateLead" />
 		</classes>
 	</test> <!-- Test -->
+	
+	<test name="Contact">
+		<classes>
+			<class name="leaftaps.Contact.CreateContact" />
+			<class name="leaftaps.Lead.CreateLead" />
+		</classes>
+	</test> <!-- Test -->
+	
 </suite> <!-- Suite -->

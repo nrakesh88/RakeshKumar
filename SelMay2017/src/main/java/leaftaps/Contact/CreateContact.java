@@ -6,7 +6,7 @@ import wrappers.LeafTapsWrapper;
 
 public class CreateContact extends LeafTapsWrapper {
 
-	@Test
+	@Test(invocationCount = 3)
 	public void  createContact() throws Exception {				
 		clickByLink("Contacts");
 		clickByLink("Create Contact");
