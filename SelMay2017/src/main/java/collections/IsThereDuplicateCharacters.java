@@ -16,7 +16,7 @@ public class IsThereDuplicateCharacters {
 		// 3, If the character is in map key then print duplicate and break (containsKey(""))
 		// 4, If not add to the map (put(k,v))
 		
-		String companyName = "Aspire Systems";
+		String companyName = "Hexaware";
 			
 		
 		char[] allChars= companyName.toLowerCase().toCharArray();

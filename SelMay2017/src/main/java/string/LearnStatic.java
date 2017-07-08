@@ -13,11 +13,11 @@ public class LearnStatic extends AbClass{
 
 	}
 
-	void a(){
+	/*void a(){
 		//variable = "TestAutomation";
 		AbClass obj = new AbClass();
 		
-	}
+	}*/
 
 	/*public final void test() {
 

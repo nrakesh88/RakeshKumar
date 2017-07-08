@@ -5,7 +5,6 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 
 
@@ -20,7 +19,7 @@ public class LearnSelect {
 		//Maximize		
 		driver.manage().window().maximize();
 		//Load URL		
-		driver.get("http://leaftaps.com");		
+		driver.get("http://leaftaps.com/opentaps");		
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);		
 		//Enter the userName
 		driver.findElementById("username").sendKeys("DemoSalesManager");		
